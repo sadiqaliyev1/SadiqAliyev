@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   max-width: 1440px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 body {
@@ -13,7 +13,6 @@ body {
 }
 
 main {
-  width: 1440px;
   margin: 0 auto;
 }
 
@@ -97,17 +96,17 @@ header {
   }
 
   main {
-    max-width: 1024px;
+    /* max-width: 1024px; */
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 768px;
+    /* max-width: 768px; */
   }
 
   main {
-    max-width: 768px;
+    /* max-width: 768px; */
   }
 
   .navDiv {
@@ -122,14 +121,13 @@ header {
 
 @media (max-width: 480px) {
   header {
-    width: 480px;
   }
   .container {
-    max-width: 480px;
+    max-width: 100%;
   }
 
   main {
-    max-width: 480px;
+    /* max-width: 480px; */
   }
 
   .navDiv {
@@ -221,31 +219,14 @@ header {
   }
 
   main {
-    max-width: 390px;
+    /* max-width: 390px; */
   }
   .navDiv {
     gap: 170px;
   }
 }
 
-@media (max-width: 300px) {
-  .container {
-    width: 300px;
-  }
-  header {
-    max-width: 300px;
-  }
-  .container {
-    max-width: 300px;
-  }
 
-  main {
-    max-width: 300px;
-  }
-  .navDiv {
-    gap: 80px;
-  }
-}
 /* ! UIVERSE */
 /* ?hamburger */
 
