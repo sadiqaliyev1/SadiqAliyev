@@ -1,5 +1,5 @@
 .container {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -47,7 +47,7 @@ nav {
 
 header {
   width: 100%;
-  /* height: 500px;     */
+  height: 500px;
   background: url("./header.png");
   background-size: cover;
   background-position: center;
@@ -183,6 +183,10 @@ header {
   .intro {
     /* gap: 156px; */
   }
+
+  header {
+    height: 650px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -190,7 +194,7 @@ header {
     width: 150px;
   }
   .intro {
-      margin-top: 20px;
+    margin-top: 20px;
     justify-content: center;
     flex-direction: column-reverse;
   }
@@ -210,8 +214,6 @@ header {
   .navDiv {
     /* gap: 170px; */
   }
-
-
 
   .personalImg {
     margin-top: 40px;
@@ -443,3 +445,55 @@ header {
 }
 
 /* ! UIVERSE */
+
+/* about */
+.meWord {
+  color: aqua;
+}
+.aboutHead {
+  font-size: 35.5px;
+  padding-top: 50px;
+  text-align: center;
+}
+.aboutSection {
+  background-color: #323946;
+  height: 600px;
+}
+.careerInfo {
+}
+
+.myCart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.bodyCart {
+  width: 270px;
+  height: 300px;
+  background-color: aqua;
+  border-radius: 12px;
+  position: absolute;
+  top: 130px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  height: 100%;
+  flex-direction: column;
+}
+.cartImage {
+  border: 5px solid black;
+  z-index: 1;
+  width: 200px;
+  border-radius: 100%;
+}
+.nameCart {
+  font-size: 26px;
+}
+.frontEnd {
+  margin-top: 5px;
+  font-size: 15px;
+  color: black;
+}
+/* about */
