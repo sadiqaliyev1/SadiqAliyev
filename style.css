@@ -1,10 +1,16 @@
 .container {
   display: flex;
   justify-content: center;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 100px;
+  flex-wrap: wrap;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: sans-serif;
@@ -17,12 +23,14 @@ main {
 }
 
 .navDiv {
+  width: 100%;
   display: flex;
-  gap: 300px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .portfolioHeader {
-  padding: 20px;
+  padding-top: 20px;
   font-size: 20px;
 }
 
@@ -38,7 +46,8 @@ nav {
 }
 
 header {
-  height: 500px;
+  width: 100%;
+  /* height: 500px;     */
   background: url("./header.png");
   background-size: cover;
   background-position: center;
@@ -47,10 +56,13 @@ header {
 /* intro */
 
 .intro {
+  flex-wrap: wrap;
+  width: 100%;
   margin-top: 55px;
   align-items: center;
   display: flex;
-  gap: 300px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .name {
@@ -61,6 +73,7 @@ header {
 .personalImg {
   width: 200px;
   border-radius: 40%;
+  object-fit: cover;
 }
 
 .description {
@@ -101,7 +114,65 @@ header {
 }
 
 @media (max-width: 768px) {
+  .personalImg {
+    width: 175px;
+  }
+  .intro {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .hamburgerOpenNav {
+    background: rgba(0, 123, 255, 0.2);
+    /* mavi + şəffaf */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    top: 40px;
+    right: 0;
+    position: absolute;
+    width: 83px;
+    height: 150px;
+
+    animation: fadeInScale 0.4s ease forwards;
+  }
+
+  .hamburgerCloseNav {
+    animation: fadeOutScale 0.4s ease forwards;
+  }
+
+  .hamburgerOpenNav > a {
+    margin: 10px;
+    line-height: 24px;
+  }
+
+  .hamburgerOpenNav > a:hover {
+    background-color: red;
+  }
+
+  /* fate in , out */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.01);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
   .container {
+    padding: 0 30px;
     /* max-width: 768px; */
   }
 
@@ -109,20 +180,25 @@ header {
     /* max-width: 768px; */
   }
 
-  .navDiv {
-    display: flex;
-    gap: 160px;
-  }
-
   .intro {
-    gap: 156px;
+    /* gap: 156px; */
   }
 }
 
 @media (max-width: 480px) {
+  .personalImg {
+    width: 150px;
+  }
+  .intro {
+      margin-top: 20px;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
   header {
+    padding: 0;
   }
   .container {
+    padding: 0 14.5px;
     max-width: 100%;
   }
 
@@ -131,12 +207,10 @@ header {
   }
 
   .navDiv {
-    gap: 170px;
+    /* gap: 170px; */
   }
 
-  .intro {
-    display: block;
-  }
+
 
   .personalImg {
     margin-top: 40px;
@@ -162,7 +236,8 @@ header {
     /* mavi + şəffaf */
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    margin-top: 40px;
+    top: 40px;
+    right: 0;
     position: absolute;
     width: 83px;
     height: 150px;
@@ -222,10 +297,9 @@ header {
     /* max-width: 390px; */
   }
   .navDiv {
-    gap: 170px;
+    /* gap: 170px; */
   }
 }
-
 
 /* ! UIVERSE */
 /* ?hamburger */
