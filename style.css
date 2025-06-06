@@ -451,21 +451,30 @@ header {
   color: aqua;
 }
 .aboutHead {
+  padding-top: 110px;
   font-size: 35.5px;
-  padding-top: 50px;
+  /* padding-top: 60px; */
   text-align: center;
 }
 .aboutSection {
   background-color: #323946;
-  height: 600px;
+  height: 800px;
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
 }
 .careerInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  
 }
 
 .myCart {
   position: relative;
   display: flex;
   justify-content: center;
+  height: 245px;
 }
 .bodyCart {
   width: 270px;
@@ -497,3 +506,21 @@ header {
   color: black;
 }
 /* about */
+
+.CvSelected{
+  display: flex;
+  gap: 38px;
+  font-size: 21px;
+}
+
+/* .profileSection{
+  display: flex;
+
+} */
+ 
+.educationInfo{
+  margin-top: 70px;
+  /* line-height: 40px; */
+  font-size: 20px;
+}
+.educationText{}
