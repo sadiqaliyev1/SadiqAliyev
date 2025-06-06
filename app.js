@@ -48,4 +48,13 @@ shortCourseText.addEventListener("click",()=>{
 
 // !Short Course
 
+
+// ! yuxaridaki about idaresi
+const home = document.querySelector(".home");
+const aboutSection =  document.querySelector(".aboutSection");
+
+
+home.addEventListener("click",()=>{
+    aboutSection.scrollIntoView({behavior: "smooth"})
+})
 //! about

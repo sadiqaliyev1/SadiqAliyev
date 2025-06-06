@@ -617,7 +617,9 @@ header {
     align-items: center;
   }
   
-  
+    .aboutSection{
+    height: 1000px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -694,8 +696,14 @@ header {
   header {
     height: 650px;
   }
-}
 
+  /* two  page*/
+
+}
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 @media (max-width: 480px) {
   .personalImg {
     width: 150px;
