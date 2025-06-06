@@ -479,19 +479,19 @@ header {
   background-color: aqua;
   border-radius: 12px;
   position: absolute;
-  top: 130px;
+  top: 160px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
   height: 100%;
   flex-direction: column;
 }
 .cartImage {
   border: 10px solid #323946;
   z-index: 1;
-  width: 200px;
+  width: 225px;
+  height: 225px;
   border-radius: 100%;
 }
 .nameCart {
@@ -559,30 +559,65 @@ header {
   display: none;
 }
 
-
-
-
-
 /*!  media media media */
-@media (max-width: 1190px){
-  .careerInfo {
+@media (max-width: 1190px) {
+  /* .careerInfo {
     flex-direction: column;
     align-items: center;
-  }
-  
+  } */
 
-  .MainInfo{
-    
+
+  .aboutHead {
+    padding-top: 70px;
+    font-size: 33.5px;
   }
+  .careerInfo {
+    margin-top: 37px;
+  }
+  .myCart {
+    height: 267px;
+  }
+  .cartImage {
+    width: 215px;
+    height: 225px;
+  }
+  .bodyCart {
+    width: 250px;
+    height: 250px;
+  }
+  .nameCart {
+    font-size: 24px;
+  }
+  .frontEnd {
+    font-size: 13px;
+  }
+  .CvSelected {
+    gap: 22px;
+    font-size: 16.5px;
+  }
+  .educationInfo {
+    margin-top: 45px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+  .ShortCourse {
+    margin-top: 45px;
+    line-height: 50px;
+    font-size: 16px;
+    display: none;
+  }
+  /* ? davam edecem  */
 }
 @media (max-width: 1024px) {
   .container {
     max-width: 1024px;
   }
-
-  main {
-    /* max-width: 1024px; */
+    .careerInfo {
+    flex-direction: column;
+    align-items: center;
   }
+  
+  
 }
 
 @media (max-width: 768px) {
