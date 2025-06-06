@@ -471,6 +471,7 @@ header {
   display: flex;
   justify-content: center;
   height: 245px;
+  margin-bottom: 170px;
 }
 .bodyCart {
   width: 270px;
@@ -556,4 +557,217 @@ header {
   line-height: 57px;
   font-size: 20px;
   display: none;
+}
+
+
+
+
+
+/*!  media media media */
+@media (max-width: 1190px){
+  .careerInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .MainInfo{
+    
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  main {
+    /* max-width: 1024px; */
+  }
+}
+
+@media (max-width: 768px) {
+  .personalImg {
+    width: 175px;
+  }
+  .intro {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .hamburgerOpenNav {
+    background: rgba(0, 123, 255, 0.2);
+    /* mavi + şəffaf */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    top: 40px;
+    right: 0;
+    position: absolute;
+    width: 83px;
+    height: 150px;
+
+    animation: fadeInScale 0.4s ease forwards;
+  }
+
+  .hamburgerCloseNav {
+    animation: fadeOutScale 0.4s ease forwards;
+  }
+
+  .hamburgerOpenNav > a {
+    margin: 10px;
+    line-height: 24px;
+  }
+
+  .hamburgerOpenNav > a:hover {
+    background-color: red;
+  }
+
+  /* fate in , out */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.01);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .container {
+    padding: 0 30px;
+    /* max-width: 768px; */
+  }
+
+  main {
+    /* max-width: 768px; */
+  }
+
+  .intro {
+    /* gap: 156px; */
+  }
+
+  header {
+    height: 650px;
+  }
+}
+
+@media (max-width: 480px) {
+  .personalImg {
+    width: 150px;
+  }
+  .intro {
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  header {
+    height: 100%;
+    padding: 0;
+  }
+  .container {
+    padding: 0 14.5px;
+    max-width: 100%;
+  }
+
+  main {
+    /* max-width: 480px; */
+  }
+
+  .navDiv {
+    /* gap: 170px; */
+  }
+
+  .personalImg {
+    margin-top: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  header {
+    height: 650px;
+  }
+
+  .hamburgerOpenNav {
+    background: rgba(0, 123, 255, 0.2);
+    /* mavi + şəffaf */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    top: 40px;
+    right: 0;
+    position: absolute;
+    width: 83px;
+    height: 150px;
+
+    animation: fadeInScale 0.4s ease forwards;
+  }
+
+  .hamburgerCloseNav {
+    animation: fadeOutScale 0.4s ease forwards;
+  }
+
+  .hamburgerOpenNav > a {
+    margin: 10px;
+    line-height: 24px;
+  }
+
+  /* fate in , out */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.01);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* @keyframes fadeOutScale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+} */
+}
+@media (max-width: 390px) {
+  .container {
+    width: 390px;
+  }
+  header {
+    max-width: 390px;
+  }
+  .container {
+    max-width: 390px;
+  }
+
+  main {
+    /* max-width: 390px; */
+  }
+  .navDiv {
+    /* gap: 170px; */
+  }
 }
