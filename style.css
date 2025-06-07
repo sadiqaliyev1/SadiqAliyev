@@ -485,14 +485,29 @@ header {
   flex-wrap: wrap;
 }
 
-.myCart {
+/* .myCart {
   position: relative;
   display: flex;
   justify-content: center;
   height: 245px;
   margin-bottom: 170px;
+} */
+     .myCart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 245px;
+    margin-bottom: 170px;
 }
-.bodyCart {
+.imageContainer {
+    position: relative;
+    width: 245px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .bodyCart {
   width: 270px;
   height: 300px;
   background-color: aqua;
@@ -505,21 +520,92 @@ header {
   align-items: center;
   height: 100%;
   flex-direction: column;
+} */
+.bodyCart {
+    width: 270px;
+    height: 300px;
+    background: #2c3e50;
+    border-radius: 12px;
+    position: absolute;
+    top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
-.cartImage {
+
+.bodyCart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* .cartImage {
   border: 10px solid #323946;
   z-index: 1;
   width: 225px;
   height: 225px;
   border-radius: 100%;
+} */
+ .cartImage {
+    border: 8px solid #2c3e50;
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    z-index: 3;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.nameCart {
+.cartImage:hover {
+    border-color: #394349;
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+}
+.techCircle {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #3498db;
+    animation: rotate 4s linear infinite;
+    z-index: 1;
+}
+.delay-1 {
+    width: 260px;
+    height: 260px;
+    animation-delay: 0.5s;
+    border-top-color: #2ecc71;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* .nameCart {
   font-size: 26px;
+} */
+.nameCart {
+    font-size: 26px;
+    color: #ecf0f1;
+    font-weight: 600;
 }
-.frontEnd {
+
+
+
+/* .frontEnd {
   margin-top: 5px;
   font-size: 15px;
   color: black;
+} */
+ 
+.frontEnd {
+    font-size: 15px;
+    color: #bdc3c7;
+    margin-top: 5px;
+    letter-spacing: 1px;
 }
 /* about */
 
