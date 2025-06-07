@@ -21,7 +21,9 @@ body {
 main {
   margin: 0 auto;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .navDiv {
   width: 100%;
   display: flex;
@@ -558,14 +560,24 @@ header {
   font-size: 20px;
   display: none;
 }
-
+.Experience {
+  margin-top: 70px;
+  line-height: 57px;
+  font-size: 20px;
+  display: none;
+}
+.Details {
+  margin-top: 70px;
+  line-height: 57px;
+  font-size: 20px;
+  display: none;
+}
 /*!  media media media */
 @media (max-width: 1190px) {
   /* .careerInfo {
     flex-direction: column;
     align-items: center;
   } */
-
 
   .aboutHead {
     padding-top: 70px;
@@ -599,8 +611,23 @@ header {
     margin-top: 45px;
     line-height: 50px;
     font-size: 16px;
+    display: none;
+  }
+
+  .Experience {
+    margin-top: 45px;
+    line-height: 50px;
+    font-size: 16px;
+    display: none;
   }
   .ShortCourse {
+    margin-top: 45px;
+    line-height: 50px;
+    font-size: 16px;
+    display: none;
+  }
+
+  .Details {
     margin-top: 45px;
     line-height: 50px;
     font-size: 16px;
@@ -612,12 +639,12 @@ header {
   .container {
     max-width: 1024px;
   }
-    .careerInfo {
+  .careerInfo {
     flex-direction: column;
     align-items: center;
   }
-  
-    .aboutSection{
+
+  .aboutSection {
     height: 1000px;
   }
 }
@@ -698,9 +725,9 @@ header {
   }
 
   /* two  page*/
-
 }
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
