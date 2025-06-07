@@ -157,9 +157,9 @@ header {
     line-height: 24px;
   }
 
-  .hamburgerOpenNav > a:hover {
+  /* .hamburgerOpenNav > a:hover {
     background-color: red;
-  }
+  } */
 
   /* fate in , out */
   @keyframes fadeInScale {
@@ -573,6 +573,39 @@ header {
   display: none;
 }
 /*!  media media media */
+.navLink {
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Hover zamanı alt xətt */
+.navLink:hover::after,
+.navLink.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #00ffff; /* İstədiyin rəngi qoy */
+}
+
+/* Effektli keçid üçün */
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #00ffff;
+  transition: width 0.3s ease-in-out;
+}
+
+
 @media (max-width: 1190px) {
   /* .careerInfo {
     flex-direction: column;
@@ -691,9 +724,6 @@ header {
     line-height: 24px;
   }
 
-  .hamburgerOpenNav > a:hover {
-    background-color: red;
-  }
 
   /* fate in , out */
   @keyframes fadeInScale {
